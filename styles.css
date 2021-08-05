@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-width: 400px;
+}
+
+body {
+    background: white;
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+}
+
+.navL, .navR {
+    list-style-type: none;
+    display: inline;
+}
+
+.navR-a, .navR-b {
+    display: inline;
+}
+
+.navL a, .navR a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    padding: 6px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navL a:first-of-type {
+    margin-left: 15px;
+}
+
+.navL a {
+    color: rgb(34, 34, 34);
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.navR-container {
+    flex-grow: 1;
+}
+
+.navR {
+    float: right;
+    padding-left: 32px;
+    height: 48px;
+    line-height: normal;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+}
+
+.navR-a {
+    font-family: arial,sans-serif;
+    line-height: normal;
+    padding-right: 15px;
+}
+
+.navR-a a {
+    padding-left: 15px;
+    color: rgba(0, 0, 0, .87);
+}
+
+.material-icons {
+    color: rgb(95, 99, 104);
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.apps {
+    display: inline-block;
+}
+
+.apps a {
+    padding: 8px;
+}
+
+.navR button {
+    background: #1a73e8;
+    border: 1px solid transparent;
+    color: white;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin: 0 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.fnavR li {
+    float: right;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+footer nav ul {
+    padding: 0;
+}
+
+.fnavL {
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+
+.fnavC {
+    order: 2;
+}
+
+.fnavR {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+
+
+
